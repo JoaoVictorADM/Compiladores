@@ -1,0 +1,2 @@
+let printSquaresOfPrimesBetween(n, m) = { if n > m then { temp = n; n = m; m = temp; }; for(i = n; i <= m; i = i + 1) { if i >= 2 then { isPrime = 1; for(j = 2; j * j <= i; j = j + 1) { temp = i; while temp >= j do { temp = temp - j; }; if temp == 0 then { isPrime = 0; }; }; if isPrime == 1 then { print(i * i); }; }; }; }
+printSquaresOfPrimesBetween(1, 10)
